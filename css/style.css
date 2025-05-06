@@ -18,8 +18,7 @@ h5{
 
 p,
 span {
-    /*font-family: "Cormorant Garamond", serif;*/
-    font-family: "Lora", serif;
+    font-family: "Cormorant Garamond", serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -54,7 +53,7 @@ span {
 }
 
 .footer {
-    font-size: 14px;
+    font-size: 18px;
     padding: 3em 0;
 }
 
@@ -86,4 +85,28 @@ span {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.footer ul i {
+    padding-right: 2px;
+    font-size: 12px;
+    line-height: 0;
+}
+
+.footer ul a {
+    display: inline-block;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn-close:focus{
+    outline: none !important;
+    box-shadow: none !important;
 }
