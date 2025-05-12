@@ -12,8 +12,13 @@ body {
 }
 
 
-h5{
+h5 {
     font-size: xx-large;
+}
+
+
+h6{
+    font-family: "Cormorant Garamond", serif;
 }
 
 p,
@@ -106,7 +111,21 @@ span {
     box-shadow: none !important;
 }
 
-.btn-close:focus{
+.btn-close:focus {
     outline: none !important;
     box-shadow: none !important;
+}
+
+.carousel-item>.row {
+    display: flex;
+}
+
+.product-card {
+    padding: 10px;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
 }
