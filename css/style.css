@@ -129,3 +129,48 @@ span {
     max-width: 100%;
     height: auto;
 }
+
+.scrolling-ticker {
+	padding: 20px 0;
+	color: var(--primary-color);
+}
+
+.scrolling-ticker-box {
+	gap: 20px;
+	position: relative;
+	display: flex;
+	overflow: hidden;
+	user-select: none;
+}
+
+.scrolling-content {
+	flex-shrink: 0;
+	display: flex;
+	gap: 20px;
+	min-width: 100%;
+	animation: scroll 30s linear infinite;
+}
+
+.scrolling-content span {
+	display: inline-flex;
+	align-items: center;
+	font-family: "Cormorant Garamond", serif;;
+	font-size: 24px;
+	font-weight: 500;
+}
+
+@keyframes scroll {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(calc(-100% - 20px));
+	}
+}
+
+.scrolling-content span i{
+	font-size: 10px;
+	color: var(--primary-color);
+	margin-right: 20px;
+}
